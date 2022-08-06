@@ -78,7 +78,8 @@ jacocoTestReport {
                     'ae/hcl/gateway/exception/**',
                     'ae/hcl/gateway/repository/**',
                     'ae/hcl/gateway/filter/**',
-                    '**/ae/hcl/gateway/constant/**',
+                    'ae/hcl/gateway/constant/**',
+                    'ae/hcl/gateway/security/**',
                     'ae/hcl/gateway/HclGatewayApp.class'
             ])
         }))
@@ -88,8 +89,8 @@ sonarqube {
     properties {
         property 'sonar.projectName', 'hcl-banking-gateway'
         property 'sonar.projectKey', 'hcl-banking-gateway'
-        property 'sonar.host.url', 'http://192.168.1.21:9000'
-        property "sonar.exclusions", "**/ae/hcl/gateway/dto/**, **/ae/hcl/gateway/entity/**, **/ae/hcl/gateway/constant/**, 'ae/hcl/gateway/filter/**', **/ae/hcl/gateway/exception/**, **/ae/hcl/gateway/repository/**, **/ae/hcl/gateway/HclGatewayApp.java"
+        property 'sonar.host.url', 'http://192.168.85.175:9000'
+        property "sonar.exclusions", "**/ae/hcl/gateway/dto/**, **/ae/hcl/gateway/entity/**, **/ae/hcl/gateway/security/**, **/ae/hcl/gateway/constant/**, **/ae/hcl/gateway/filter/**, **/ae/hcl/gateway/exception/**, **/ae/hcl/gateway/repository/**, **/ae/hcl/gateway/HclGatewayApp.java"
         property "sonar.issue.ignore.multicriteria", "e1"
         property "sonar.issue.ignore.multicriteria.e1.resourceKey", "src/test/java/**/*"
         property "sonar.issue.ignore.multicriteria.e1.ruleKey", "*"
